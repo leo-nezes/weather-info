@@ -4,7 +4,7 @@ export const Conatiner = styled.div``;
 
 export const Header = styled.header`
   padding: 32px 0;
-  background: #d3d3d3;
+  background: #1e202b;
 `;
 
 export const HeaderContent = styled.div`
@@ -23,17 +23,13 @@ export const Content = styled.main`
 `;
 
 export const Search = styled.section`
-  /* border: 2px solid red; */
-
   display: flex;
   width: 900px;
   max-height: 700px;
 `;
 
 export const InputContainer = styled.div`
-  /* border: 2px solid green; */
-
-  background: #232129;
+  background: #1e202b;
   border-radius: 16px;
   display: flex;
   justify-content: center;
@@ -64,8 +60,6 @@ export const InputContainer = styled.div`
 `;
 
 export const SearchInfo = styled.section`
-  /* border: 2px solid yellow; */
-
   height: 450px;
   width: 900px;
   padding: 16px;
@@ -78,7 +72,7 @@ export const LocationData = styled.div`
   padding-left: 138px;
 
   span {
-    color: #000;
+    color: #fff;
     font-size: 24px;
   }
 
@@ -99,7 +93,7 @@ export const Temperature = styled.div`
 
   span {
     font-size: 60px;
-    color: #000;
+    color: #fff;
   }
 
   svg {
@@ -107,7 +101,7 @@ export const Temperature = styled.div`
     height: 60px;
     margin-top: 10px;
     margin-right: 16px;
-    color: #000;
+    color: #fff;
   }
 `;
 
@@ -116,13 +110,12 @@ export const TemperatureData = styled.div`
   flex-direction: column;
 
   span {
-    color: #000;
+    color: #fff;
     font-size: 20px;
   }
 `;
 
 export const DaysWeekContainer = styled.div`
-  /* border: 2px solid magenta; */
   display: flex;
   flex-direction: row;
 
@@ -133,20 +126,19 @@ export const DaysWeekContainer = styled.div`
 `;
 
 export const Day = styled.div`
-  /* border: 2px solid red; */
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   span {
-    color: #000;
+    color: #fff;
     font-size: 20px;
   }
 
   svg {
     height: 50px;
     width: 50px;
+    margin: 10px 0;
   }
 `;
