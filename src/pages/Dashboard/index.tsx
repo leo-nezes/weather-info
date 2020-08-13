@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { FiSearch, FiSun, FiCloudRain } from 'react-icons/fi';
+import Geonames from 'geonames.js';
 
 import {
   Conatiner,
@@ -19,6 +20,21 @@ import {
 } from './styles';
 
 const Dashboard: React.FC = () => {
+  const geonames = new Geonames({
+    username: 'leo.nezes',
+    lan: 'en',
+    encoding: 'JSON',
+  });
+
+  useEffect(() => {
+    async function load(): Promise<void> {
+      const cont = await geonames.search({ q: 'CONT' });
+      console.log(cont);
+    }
+
+    load();
+  }, [geonames]);
+
   return (
     <Conatiner>
       <Header>
